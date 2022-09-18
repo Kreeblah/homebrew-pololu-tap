@@ -9,6 +9,7 @@ class Pavr2 < Formula
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
+  depends_on "libusbp"
   depends_on "qt@5"
 
   def install
