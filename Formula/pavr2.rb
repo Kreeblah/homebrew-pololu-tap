@@ -8,7 +8,7 @@ class Pavr2 < Formula
   head "https://github.com/pololu/pololu-usb-avr-programmer-v2.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "libusbp"
   depends_on "qt@5"
 
