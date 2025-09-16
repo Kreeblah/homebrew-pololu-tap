@@ -15,6 +15,7 @@ class Pavr2 < Formula
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args,
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_PREFIX_PATH=#{Formula["qt@5"].opt_prefix}"
       system "make", "install"
     end
